@@ -1,0 +1,52 @@
+# My proposal
+
+**Purpose:** For my final capstone project, I will be tackling the question, *“Where are the safest cities to live in the United States?”* utilizing datasets found on Kaggle.com.
+
+**URL:** https://www.kaggle.com/kwullum/fatal-police-shootings-in-the-us?select=PoliceKillingsUS.csv
+
+**Datasets:**
+
+MedianHouseholdIncome2015.csv (3 columns, 29322 rows)
+
+Features: Geographic Area(Object), City(Object), Median Income(Object)
+
+PercentagePeopleBelowPovertyLevel.csv (3 columns, 29329 rows)
+
+Features: Geographic Area(Object), City(Object), poverty_rate(Object)
+
+PercentOver25CompletedHighSchool.csv (3 columns, 29329 rows)
+
+Features: Geographic Area(Object), City(Object), percent_completed_hs(Object)
+
+PoliceKillingsUS.csv (14 columns, 2535 rows)
+
+Features: id(int64), name(Object), date(Object), manner_of_death(Object), armed(Object), age(float64), gender(Object), race(Object), city(Object), state(Object), signs_of_mental_illness(bool), threat_level(Object), flee(Object), body_camera(bool)
+
+ShareRaceByCity.csv (7 columns, 29268 rows)
+
+Features: Geographic area(Object), City(Object), share_white(object), share_black(Object), share_native_american(Object), share_asian(Object), share hispanic(Object)
+
+**Hypothesis:**
+
+1. Greater asian populations result in less police shootings. 
+    
+    (A/B test btwn other ethnic populations)
+    
+2. Cities with a population of more educated people are less likely to have fatal police shootings.
+    
+    (A/B test between different education levels in each city)
+    
+3. Cities with lower median household income and greater poverty levels have more police shootings.
+    
+    (A/B test between income levels and poverty levels)
+    
+4. Black people are more likely to be shot than white people. 
+    
+    (A/B test between races)
+    
+
+**Method:** To test my hypothesis, I will use python and the following libraries for my analysis; pandas, seaborn, scipy, numpy. I will join relevant layers to create data visualizations and perform A/B testing between features provided by the datasets to fail to disprove or disprove my hypothesis.
+
+**Audience:**
+
+People looking to live or relocate to a different part of the US. Depending on their own background and preferences, people may use the findings from this project to determine which city or area to live in depending on the number of police shootings that occured.
